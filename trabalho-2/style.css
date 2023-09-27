@@ -1,0 +1,50 @@
+/* Estilos CSS para as cores e fontes */
+.cor-verde-arial {
+    color: green;
+    font-family: Arial, sans-serif;
+}
+
+.cor-azul-helvetica {
+    color: blue;
+    font-family: Helvetica, sans-serif;
+}
+
+.cor-amarelo-georgia {
+    color: rgb(165, 165, 15);
+    font-family: Georgia, serif;
+}
+
+.cor-vermelha-times {
+    color: red;
+    font-family: "Times New Roman", serif;
+}
+
+.cor-roxa-verdana {
+    color: purple;
+    font-family: Verdana, sans-serif;
+}
+
+.cor-laranja-roboto {
+    color: orange;
+    font-family: Roboto, sans-serif;
+}
+
+.cor-marrom-open-sans {
+    color: brown;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cor-florescente-lato {
+    color: #ff00ff; /* Magenta (exemplo) */
+    font-family: Lato, sans-serif;
+}
+
+.cor-rosa-montserrat {
+    color: pink;
+    font-family: Montserrat, sans-serif;
+}
+
+.cor-cinza-inconsolata {
+    color: gray;
+    font-family: Inconsolata, monospace;
+}

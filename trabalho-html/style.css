@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+h1 {
+    text-align: center;
+}
+.info {
+    margin-bottom: 10px;
+}
+.info label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+.info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+#nome {
+    color: blue;
+}
+#cpf {
+    color: green;
+}
+#endereco {
+    color: red;
+}
+#tel{
+    color: purple;
+}
+#email {
+    color: orange;
+}
+#celular {
+    color: rgb(187, 38, 174);
+}
+#sexo {
+    color: rgb(4, 238, 82);
+}
+#data {
+    color: rgb(14, 191, 204);
+}
