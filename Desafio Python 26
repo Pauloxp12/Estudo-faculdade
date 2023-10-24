@@ -1,0 +1,26 @@
+#lista de arrays para guardar o cadastro dos suspeitos e cumplices.
+
+cumplices = []
+criminosos = []
+
+while True:
+    suspeito = input("Nome do entrevistado (ou 'fim' para encerrar): ")
+    
+    if suspeito.lower() == 'fim':
+        break  #encerra o loop caso Digite fim no lugar do nome do entrevistado
+    
+    local = input("Esteve no local do crime? (Sim ou Não): ")
+    telefonou = input("Telefonou para a vítima? (Sim ou Não): ")
+    moradia = input("Mora próximo à vítima? (Sim ou Não): ")
+    devia = input("Devia para a vítima? (Sim ou Não): ")
+    trabalho = input("Já trabalhou para a vítima? (Sim ou Não): ")
+    
+    #condição para saber se é suspeito ou cumplice.
+    if (local == "Sim" or telefonou == "Sim") and (moradia == "Sim" or devia == "Sim" or trabalho == "Sim"):
+        criminosos.append(suspeito)
+    elif telefonou == "Sim":
+        cumplices.append(suspeito)
+
+#Lista de cumplices e crimonosos
+print("Cúmplices:", cumplices)
+print("Criminosos:", criminosos)
