@@ -1,0 +1,131 @@
+
+#Função para calcular a media.
+def calcular_media():
+    nota1 = float(input("Digite a primeira nota"))
+    nota2 = float(input("Digite a segunda nota"))
+
+    media = (nota1 + nota2) / 2
+    print("sua media e: ", + media)
+
+    if media == 10:
+        print ("Aprovado com distinção")
+
+    elif media >= 7:
+        print ("Aprovado!")
+    
+    else:
+        print ("Reprovado!")
+
+#Função para definir genero.
+
+def verificar_genero():
+    genero = (input("Digite o Gênero: "))
+
+    if genero == 'M':
+        print ("Masculino")
+
+    elif genero == 'F':
+        print ("Feminino")
+
+    else:
+        print ("Sexo Inválido!")
+
+#função para checar maior e menor numero
+
+def maiormenornumero():
+
+    num1 = int(input("Digite o numero 1: "))
+    num2 = int(input("Digite o numero 2: "))
+    num3 = int(input("Digite o numero 3: "))
+
+    maior = max(num1, num2, num3)
+    menor = min(num1, num2, num3) 
+
+    print ("Maior numero e: ", maior)
+    print ("Maior numero e: ", menor)
+
+#função para inserir nome na vertical
+
+def nomevertical():
+    nome = input("Digite o seu nome: ")
+    for letra in nome:
+      print(letra)
+
+
+#função para ler 5 valores inteiros em uma lista
+
+def mostrarnumeros():
+    numeros = [] 
+    quantidade_numeros = 5
+
+    for _ in range (quantidade_numeros):
+        numero = int(input("Digite um número: "))
+        numeros.append(numero)
+
+    print("Lista de Numeros", numeros)
+
+#função para pedir um numero e mostra-lo
+
+def mostraruniconumero():
+    numero = int(input("Digite um numero: "))
+
+    print ("O numero digitado é: ", numero)
+
+#função para somar 3 numeros e imprimir a soma multiplicada
+
+def multiplicacao():
+    num1 = int(input("Digite o primeiro numero: "))
+    num2 = int(input("Digite o segundo numero: "))
+    num3 = int(input("Digite o terceiro numero: "))
+
+    print ("A soma e a multiplicacao: ", (num1 + num2) * num3)
+
+#função para calcular a área de um quadrado, e mostrar o dobro para o usuario
+
+def calcularquadrado():
+
+    lado = (int(input("Digite comprimado do Lado Do quadrado: ")))
+    
+    area = lado ** 2 * 2
+
+    print("A sua Área é : ", area)
+
+def temperatura():
+    temperaturafah = int(input("Digite a temperatura em Fahrenheit: "))
+
+    celsius = (temperaturafah - 32) / 1.8
+    print("Temperatura em Celsius é: ", celsius) 
+
+#Menu para escolher qual exercicio voce deseja ver
+
+print("Escolha a opção: ")
+print("1 - Calcular Média: ")
+print("2 - Verificar Gênero: ")
+print("3 - Encontrar maior e menor número: ")
+print("4 - Para escolher o Nome na Vertical: ")
+print("5 - Lista 5 valores inteiros: ")
+print("6 - Mostrar numero que foi informado : ")
+print("7 - Soma de A+B multiplicado por C : ")
+print("8 - Calcule o Quadrado e Mostre o Dobro: ")
+print("9 - Temperatura em Fahrenheit: para Celsius: ")
+
+opcao = int(input("Opção: "))
+
+if opcao == 1:
+    calcular_media()
+elif opcao == 2:
+    verificar_genero()
+elif opcao == 3:
+    maiormenornumero()
+elif opcao == 4:
+    nomevertical()
+elif opcao == 5:
+    mostrarnumeros()
+elif opcao == 6:
+    mostraruniconumero()
+elif opcao == 7:
+    multiplicacao()
+elif opcao == 8:
+    calcularquadrado()
+elif opcao == 9:
+    temperatura()
